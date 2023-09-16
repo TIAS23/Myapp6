@@ -39,12 +39,13 @@
 
     <TextView
         android:id="@+id/S_txt_2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/S_txt_1"
         android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:fontFamily="@font/poppinsregular"
-        android:text="Second (and last) step where you are asked to personalize\nyour profile. No worries - you can also change these setting any time u need"
+        android:text="Second (and last) step where you are asked to personalize your profile. No worries - you can also change these setting any time u need"
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:textSize="12dp"
@@ -125,23 +126,25 @@
 
     <TextView
         android:id="@+id/S_txt_5"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/S_txt_4"
         android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:fontFamily="@font/poppinsregular"
-        android:text="Other players are going to be shown also based on your\nlanguange"
+        android:text="Other players are going to be shown also based on your languange"
         android:textColor="@color/black"
         android:textSize="12dp"
         tools:ignore="TextSizeCheck" />
 
     <LinearLayout
         android:id="@+id/layout_2"
-        android:layout_width="363dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/S_txt_5"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="0dp"
         android:orientation="horizontal"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -265,16 +268,12 @@
         android:textSize="12dp"
         tools:ignore="TextSizeCheck" />
 
-    <EditText
-        android:id="@+id/edit_fullname"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:background="@drawable/button_shape2"
-        android:fontFamily="@font/poppinsregular"
-        android:hint="Select Language"
-        android:paddingLeft="10dp"
-        android:textSize="12dp"
-        tools:ignore="TextSizeCheck" />
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_shape2"/>
 </LinearLayout>
     <Button
         android:layout_width="wrap_content"

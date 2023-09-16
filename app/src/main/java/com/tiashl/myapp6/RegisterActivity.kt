@@ -14,22 +14,15 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
         supportActionBar?.hide()
 
-        txtNextLoginListener()
+        txtNextStepListener()
         btnBackListener()
-        btnStepListener()
+        btnNextStepListener()
     }
 
-    private fun txtNextLoginListener() {
+    private fun txtNextStepListener() {
         val txtLogin = findViewById<TextView>(R.id.txt_login) // Replace TextView with your element type
         txtLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
-        }
-    }
-
-    private fun btnStepListener() {
-        val btn2 = findViewById<Button>(R.id.btn_2) // Replace Button with your element type
-        btn2.setOnClickListener {
-            startActivity(Intent(this, StepActivity::class.java))
         }
     }
 
@@ -37,6 +30,13 @@ class RegisterActivity : AppCompatActivity() {
         val rImg2 = findViewById<ImageView>(R.id.R_img_2) // Replace ImageView with your element type
         rImg2.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
+
+    private fun btnNextStepListener() {
+        val LBtn2 = findViewById<Button>(R.id.R_btn_2)
+        LBtn2.setOnClickListener {
+            startActivity(Intent(this, StepActivity::class.java))
         }
     }
 }
