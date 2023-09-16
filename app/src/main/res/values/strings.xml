@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Myapp6</string>
+    <string-array name="select_language">
+        <item>Indonesia</item>
+        <item>English</item>
+        <item>Arab</item>
+        <item>Japan</item>
+        <item>Korea</item>
+    </string-array>
+</resources>

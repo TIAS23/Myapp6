@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:backgroundTint="@color/background">
+
+    <ImageView
+        android:id="@+id/R_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="171dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/gambar1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/R_img_2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_img_1"
+        android:text="Welcome Onboard!"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/R_txt_1"
+        />
+
+    <TextView
+        android:id="@+id/R_txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_txt_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsregular"
+        android:gravity="center"
+        android:text="First step where you`re asked to provide basic\naccount access details."
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/R_txt_2"
+        android:padding="30dp"
+        android:id="@+id/layout_3">
+
+        <TextView
+            android:id="@+id/R_txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R_img_1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="YOUR NICKNAME"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/edit_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape2"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Enter Your Nickname"
+            android:paddingLeft="10dp"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/R_txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R_img_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="PASSWORD"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/create_password"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/button_shape2"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Create Password"
+            android:paddingLeft="10dp"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/R_txt_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R_img_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="PASSWORD (REPEAT)"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/create_password_2"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape2"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Repeat Password"
+            android:paddingLeft="10dp"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layout_3"
+        android:id="@+id/layout_4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Already have an account?"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Login"
+            android:textColor="@color/primaryColor"
+            android:textSize="12dp"
+            android:id="@+id/txt_login"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Step"
+        android:layout_below="@id/layout_4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="300dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/R_btn_2"/>
+</RelativeLayout>

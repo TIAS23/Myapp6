@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepActivity"
+    android:backgroundTint="@color/background">
+
+    <ImageView
+        android:id="@+id/S_img_1"
+        android:layout_width="189dp"
+        android:layout_height="134dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-26dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/gambar1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/S_img_1"
+        android:text="Second Step"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/S_txt_1"/>
+
+    <TextView
+        android:id="@+id/S_txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/S_txt_1"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Second (and last) step where you are asked to personalize\nyour profile. No worries - you can also change these setting any time u need"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/S_txt_2"
+        android:text="Second Step"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/S_txt_3"/>
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="356dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/S_txt_3"
+        android:layout_marginStart="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/S_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/S_txt_3"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/tias" />
+
+        <Button
+            android:id="@+id/L_btn_1"
+            android:layout_width="124dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/S_txt_3"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:width="60dp"
+            android:background="@drawable/button_shape2"
+            android:backgroundTint="@color/primaryColor"
+            android:drawableLeft="@drawable/upload"
+            android:fontFamily="@font/poppinssemibold"
+            android:padding="10dp"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/L_txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/L_img_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="DELETE"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_1"
+        android:text="Communication"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/S_txt_4"/>
+
+    <TextView
+        android:id="@+id/S_txt_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/S_txt_4"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Other players are going to be shown also based on your\nlanguange"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/S_txt_5"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/S_img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ig" />
+
+            <CheckBox
+                android:id="@+id/S_cekbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="55dp"
+                android:checked="false"
+                android:minWidth="48dp"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/S_img_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/twt" />
+
+            <CheckBox
+                android:id="@+id/S_cekbox_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="55dp"
+                android:checked="false"
+                android:minWidth="48dp"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_5"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/S_img_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/wa" />
+
+            <CheckBox
+                android:id="@+id/S_cekbox_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="55dp"
+                android:checked="false"
+                android:minWidth="48dp"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_6"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/S_img_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ytb" />
+
+            <CheckBox
+                android:id="@+id/S_cekbox_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="55dp"
+                android:checked="false"
+                android:minWidth="48dp"
+                android:minHeight="48dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_2"
+        android:orientation="vertical"
+        android:padding="25dp">
+    <TextView
+        android:id="@+id/S_txt_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="LANGUAGE"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edit_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/button_shape2"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Select Language"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+</LinearLayout>
+
+</RelativeLayout>
