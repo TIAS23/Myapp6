@@ -1,10 +1,9 @@
 package com.tiashl.myapp6
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.btn_1
-import kotlinx.android.synthetic.main.activity_main.btn_2
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,14 +14,18 @@ class MainActivity : AppCompatActivity() {
         btnLoginListener()
         btnRegisterListener()
     }
-    private fun btnLoginListener(){
-    btn_1.setOnClickListener{
-        startActivity(Intent(this,LoginActivity::class.java))
+
+    private fun btnLoginListener() {
+        val btn1 = findViewById<Button>(R.id.btn_1) // Replace Button with your element type
+        btn1.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
-    private fun btnRegisterListener(){
-        btn_2.setOnClickListener{
-            startActivity(Intent(this,RegisterActivity::class.java))
+
+    private fun btnRegisterListener() {
+        val btn2 = findViewById<Button>(R.id.btn_2) // Replace Button with your element type
+        btn2.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 }

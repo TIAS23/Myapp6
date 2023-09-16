@@ -118,14 +118,14 @@
             tools:ignore="TextSizeCheck" />
 
         <TextView
-            android:id="@+id/L_txt_4"
+            android:id="@+id/L_txt_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/L_img_1"
+            android:layout_marginLeft="200dp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/poppinsregular"
             android:text="Forgotten Password?"
-            android:layout_marginLeft="220dp"
             android:textColor="@color/black"
             android:textSize="12dp"
             tools:ignore="DuplicateIds,TextSizeCheck" />
